@@ -1,7 +1,7 @@
 # ResponseFormat
 
 #### Description
-{**This is a package providing a format way to wrap up the return value between methods and response content of a request from client.**}
+**This is a package providing a format way to wrap up the return value between methods and response content of a request from client.**
 
 #### Software Architecture
 Software architecture description
