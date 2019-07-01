@@ -5,7 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import util.Strings;
 
-import java.io.*;
+import java.util.Properties;
 
 public enum ReturnCodeType {
     UNKNOWN(-999, "未知", "Unknown"),
@@ -22,14 +22,17 @@ public enum ReturnCodeType {
 
     private static Logger logger = LoggerFactory.getLogger(ReturnCodeType.class);
 
-    //return code
+    // return code
     private Integer code;
-    //CN operation result description
+    // CN operation result description
     private String des_CN;
-    //EN operation result description
+    // EN operation result description
     private String des_US;
 
-    //constructor with full params
+    // default constructor
+    ReturnCodeType(){}
+
+    // constructor with full params
     ReturnCodeType(int code, String des_CN, String dec_US) {
         this.code = code;
         this.des_CN = des_CN;
@@ -67,7 +70,7 @@ public enum ReturnCodeType {
     // get the description using language configured in the .properties file
     public String getDesc() {
         try {
-            PropertiesLoader propertiesLoader = new PropertiesLoader("config.properties");
+            PropertiesLoader propertiesLoader = new PropertiesLoader("src/main/resources/config.properties");
             return propertiesLoader.getProperties().getProperty("config.lang.use").equals("CN")? getDes_CN(): getDes_US();
         }catch (Exception e){
             logger.warn(e.getMessage());

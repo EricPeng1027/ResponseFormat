@@ -12,17 +12,19 @@ import java.util.Properties;
  **/
 public class PropertiesLoader {
     private Properties properties;
+    private InputStream inputStream;
 
     public PropertiesLoader(String filePath) throws IOException {
-        InputStream is = new BufferedInputStream(new FileInputStream(new File(filePath)));
-        properties.load(is);
+        this.inputStream = new BufferedInputStream (new FileInputStream(filePath));
+        this.properties = new Properties();
+        properties.load(inputStream);
     }
 
     public Properties getProperties() {
         return properties;
     }
 
-    public void setProperties(Properties properties) {
+    public void setProperties(Properties properties) throws IOException {
         this.properties = properties;
     }
 }
