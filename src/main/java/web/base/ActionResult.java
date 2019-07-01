@@ -1,3 +1,5 @@
+package web.base;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import web.ReturnCodeType;
@@ -5,7 +7,7 @@ import web.ReturnCodeType;
 import java.io.IOException;
 
 /**
- * @ClassName ActionResult
+ * @ClassName web.base.ActionResult
  * @Description action result, usually used between function callings between different layers
  * @Author ericp
  * @Date 6/3/19 11:14 AM
@@ -53,7 +55,7 @@ public class ActionResult<T> {
         return this;
     }
 
-
+    // getter and setters
     public Integer getCode() {
         return code;
     }

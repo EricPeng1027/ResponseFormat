@@ -65,10 +65,14 @@ public enum ReturnCodeType {
     }
 
     // get the description using language configured in the .properties file
-    public String getDesc() throws IOException {
-        PropertiesLoader propertiesLoader = new PropertiesLoader("config.properties");
-        return propertiesLoader.getProperties().getProperty("config.lang.use").equals("CN")? getDes_CN(): getDes_US();
-
+    public String getDesc() {
+        try {
+            PropertiesLoader propertiesLoader = new PropertiesLoader("config.properties");
+            return propertiesLoader.getProperties().getProperty("config.lang.use").equals("CN")? getDes_CN(): getDes_US();
+        }catch (Exception e){
+            logger.warn(e.getMessage());
+        }
+        return "failed getting description";
     }
 
     // getter and setters

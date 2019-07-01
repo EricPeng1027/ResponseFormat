@@ -1,11 +1,11 @@
+package web.base;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import web.ReturnCodeType;
 
-import java.io.IOException;
-
 /**
- * @ClassName CommonMessage
+ * @ClassName web.base.CommonMessage
  * @Description General action result between service method calls
  * @Author ericp
  * @Date 6/3/19 10:19 AM
@@ -22,7 +22,7 @@ public class CommonMessage {
     private String desc;
 
     // default constructor
-    public CommonMessage() throws IOException {
+    public CommonMessage() {
         // default error
         this.code = ReturnCodeType.SERVER_ERROR.getCode();
         this.desc = ReturnCodeType.SERVER_ERROR.getDesc();
