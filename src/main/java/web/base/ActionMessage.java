@@ -3,14 +3,13 @@ package web.base;
 import com.alibaba.fastjson.JSON;
 import web.ReturnCodeType;
 
-/**
- * @ClassName web.base.ActionMessage
- * @Description TODO
- * @Author ericp
- * @Date 6/28/19 5:49 PM
- * @Version 1.0
- **/
 
+/**
+ * return object of response to a request in format
+ * @author ericp
+ * @version 1.0
+ * @since 6/28/19 5:49 PM
+ */
 public class ActionMessage<T> extends CommonMessage{
     // return object, including data
     private T responseContent;

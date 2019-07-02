@@ -4,12 +4,11 @@ import java.io.*;
 import java.util.Properties;
 
 /**
- * @ClassName config.PropertiesLoader
- * @Description properties file loader class
- * @Author ericp
- * @Date 6/28/19 2:26 PM
- * @Version 1.0
- **/
+ * properties file loader class
+ * @author ericp
+ * @version 1.0
+ * @since 6/28/19 2:26 PM
+ */
 public class PropertiesLoader {
     private Properties properties;
     private InputStream inputStream;

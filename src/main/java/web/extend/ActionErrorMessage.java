@@ -4,13 +4,11 @@ import web.ReturnCodeType;
 import web.base.ActionMessage;
 
 /**
- * @ClassName ActionErrorMessage
- * @Description sub class of actionmessage which indicate error response
- * @Author ericp
- * @Date 7/1/19 4:58 PM
- * @Version 1.0
- **/
-
+ * sub class of actionmessage which indicate error response
+ * @author ericp
+ * @version 1.0
+ * @since 7/1/19 4:58 PM
+ */
 public class ActionErrorMessage extends ActionMessage<Object> {
     public ActionErrorMessage(String msg){
         this(msg, null);

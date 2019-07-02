@@ -3,13 +3,11 @@ package web.base;
 import web.ReturnCodeType;
 
 /**
- * @ClassName web.base.CommonMessage
- * @Description General action result between service method calls
- * @Author ericp
- * @Date 6/3/19 10:19 AM
- * @Version 1.0
- **/
-
+ * General action result between service method calls
+ * @author ericp
+ * @version 1.0
+ * @since 6/3/19 10:19 AM
+ */
 public class    CommonMessage {
     // return code
     private Integer code;

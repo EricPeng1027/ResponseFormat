@@ -3,13 +3,11 @@ package web.extend;
 import web.base.ActionMessage;
 
 /**
- * @ClassName ActionFailedMessage
- * @Description sub class of actionmessage which indicate failed response
- * @Author ericp
- * @Date 7/1/19 4:52 PM
- * @Version 1.0
- **/
-
+ * sub class of actionmessage which indicate failed response
+ * @author ericp
+ * @version 1.0
+ * @since 7/1/19 4:52 PM
+ */
 public class ActionFailedMessage extends ActionMessage<Object> {
     public ActionFailedMessage(){
         this.setCode(-1);

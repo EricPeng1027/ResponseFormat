@@ -5,13 +5,11 @@ import web.ReturnCodeType;
 import java.io.IOException;
 
 /**
- * @ClassName web.base.ActionResult
- * @Description action result, usually used between function callings between different layers
- * @Author ericp
- * @Date 6/3/19 11:14 AM
- * @Version 1.0
- **/
-
+ * action result, usually used between function callings between different layers
+ * @author ericp
+ * @version 1.0
+ * @since 6/3/19 11:14 AM
+ */
 public class ActionResult<T> {
     // error code value
     private Integer code;
