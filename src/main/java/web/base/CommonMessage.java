@@ -1,7 +1,5 @@
 package web.base;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import web.ReturnCodeType;
 
 /**
@@ -12,10 +10,7 @@ import web.ReturnCodeType;
  * @Version 1.0
  **/
 
-public class CommonMessage {
-    // logger
-    private static Logger logger = LoggerFactory.getLogger(CommonMessage.class);
-
+public class    CommonMessage {
     // return code
     private Integer code;
     // action result description

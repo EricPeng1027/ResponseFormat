@@ -1,11 +1,7 @@
 package web;
 
 import config.PropertiesLoader;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import util.Strings;
-
-import java.util.Properties;
 
 public enum ReturnCodeType {
     UNKNOWN(-999, "未知", "Unknown"),
@@ -19,8 +15,6 @@ public enum ReturnCodeType {
     NOT_FOUND(404, "服务未找到", "Not found"),
     INTERNAL_SERVER_ERROR(500, "内部服务器错误", "Internal server error"),
     TIMED_OUT(504, "网关超时", "Timed out");
-
-    private static Logger logger = LoggerFactory.getLogger(ReturnCodeType.class);
 
     // return code
     private Integer code;
@@ -61,7 +55,7 @@ public enum ReturnCodeType {
                 }
             }
         }catch (IllegalArgumentException e){
-            logger.warn(e.toString());
+            e.printStackTrace();
         }
 
         return unknownReturnCodeType;
@@ -73,7 +67,7 @@ public enum ReturnCodeType {
             PropertiesLoader propertiesLoader = new PropertiesLoader("src/main/resources/config.properties");
             return propertiesLoader.getProperties().getProperty("config.lang.use").equals("CN")? getDes_CN(): getDes_US();
         }catch (Exception e){
-            logger.warn(e.getMessage());
+            e.printStackTrace();
         }
         return "failed getting description";
     }

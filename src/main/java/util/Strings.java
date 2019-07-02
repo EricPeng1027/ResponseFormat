@@ -1,8 +1,5 @@
 package util;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -14,8 +11,6 @@ import java.util.regex.Pattern;
  * @Version 1.0
  **/
 public class Strings {
-    private static Logger logger = LoggerFactory.getLogger(Strings.class);
-
     public static final String Empty = "";
 
     /**

@@ -1,8 +1,6 @@
 package web.base;
 
 import com.alibaba.fastjson.JSON;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import web.ReturnCodeType;
 
 /**
@@ -14,9 +12,6 @@ import web.ReturnCodeType;
  **/
 
 public class ActionMessage<T> extends CommonMessage{
-    // logger
-    private static Logger logger = LoggerFactory.getLogger(ActionMessage.class);
-
     // return object, including data
     private T responseContent;
     // extra message
