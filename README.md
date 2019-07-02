@@ -8,7 +8,7 @@ Software architecture description
 This software has two part:
 1. ActionResult  
 This class defines a package of return fields regarding method callings, fields included are: 
-<br/>  
+ 
 Fields|Description
 :--:|--
 |**code**|*error code value*|
