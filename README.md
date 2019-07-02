@@ -10,7 +10,7 @@ This software has two part:
 This class defines a package of return fields regarding method callings, fields included are: 
  
 Fields|Description
-:--:|:--:
+:--:|--
 |**code**|*error code value*|
 |**result**|*result of the method action*|
 |**msg**|*description of the error type according to error code*|
@@ -19,6 +19,25 @@ Fields|Description
 |**data**|*value or object returned*|
                            
 set the value of each field as you need, usually *code*, *msg* and *data* are the most common fields I would choose to fill out, it's all up to you.
+
+2. CommonMessage  
+This class defines a package of return fields of response content from a request, fields included are:  
+
+Fields|Description
+:--:|--
+|**code**|*self-defined return code or HTTP status code*|
+|**desc**|*description of the code*|
+
+3. ActionMessage  
+This class extends CommonMessage and provides extra important content, which are:
+
+Fields|Description
+:--:|--
+|**responseContent**|*response content*|
+|**msg**|*extra message of response*|
+
+4. Instances of ActionMessage  
+These are some portable instances of ActionMessage, which are ActionSuccMessage, ActionFailedMessage and ActionErrorMessage. They help you construct response easier.
 
 #### Installation
 
