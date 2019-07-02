@@ -8,7 +8,7 @@ Software architecture description
 This software has two part:
 1. ActionResult  
 This class defines a package of return fields regarding method callings, fields included are: 
- 
+<br/>  
 Fields|Description
 :--:|--
 |**code**|*error code value*|
@@ -19,7 +19,8 @@ Fields|Description
 |**data**|*value or object returned*|
                            
 set the value of each field as you need, usually *code*, *msg* and *data* are the most common fields I would choose to fill out, it's all up to you.
-
+<br/>
+<br/>  
 2. CommonMessage  
 This class defines a package of return fields of response content from a request, fields included are:  
 
@@ -27,7 +28,8 @@ Fields|Description
 :--:|--
 |**code**|*self-defined return code or HTTP status code*|
 |**desc**|*description of the code*|
-
+<br/>
+<br/>  
 3. ActionMessage  
 This class extends CommonMessage and provides extra important content, which are:
 
@@ -35,9 +37,10 @@ Fields|Description
 :--:|--
 |**responseContent**|*response content*|
 |**msg**|*extra message of response*|
-
+<br/>
+<br/>  
 4. Instances of ActionMessage  
-These are some portable instances of ActionMessage, which are ActionSuccMessage, ActionFailedMessage and ActionErrorMessage. They help you construct response easier.
+These are some portable instances of ActionMessage, which are ActionSuccMessage, ActionFailedMessage and ActionErrorMessage. They help you construct your response easier.
 
 #### Installation
 
