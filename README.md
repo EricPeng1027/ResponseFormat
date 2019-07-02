@@ -6,8 +6,15 @@
 #### Software Architecture
 Software architecture description
 This software has two part:
-1. ActionResult
-This class defines 
+1. ActionResult  
+This class defines a package of return fields regarding method callings, fields included are:  
+  **code**        *error code value*  
+  **result**      *result of the method action*  
+  **msg**         *description of the error type according to error code*  
+  **detail**      *detail information message*  
+  **exception**   *exception*  
+  **data**        *value or object returned*  
+set the value of each field as you need, usually *code*, *msg* and *data* are the most common fields I would choose to fill out, it's all up to you.
 
 #### Installation
 
