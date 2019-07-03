@@ -42,17 +42,15 @@ Fields|Description
 4. Instances of ActionMessage    
 These are some portable instances of ActionMessage, which are ActionSuccMessage, ActionFailedMessage and ActionErrorMessage. They help you construct your response easier.
 
-#### Installation
+#### Maven
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### Instructions
-
-1. xxxx
-2. xxxx
-3. xxxx
+```xml
+<dependency>
+    <groupId>com.github.ericpeng1027</groupId>
+    <artifactId>ResponseFormat</artifactId>
+    <version>0.1</version>
+</dependency>
+```
 
 #### Contribution
 
