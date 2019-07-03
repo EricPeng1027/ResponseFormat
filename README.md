@@ -1,9 +1,9 @@
 # ResponseFormat
 
-#### Description
+### Description
 **This is a package providing a format way to wrap up the return value between methods and response content of a request from client.**
 
-#### Software Architecture
+### Software Architecture
 Software architecture description
 
 This software has 4 parts:
@@ -43,7 +43,7 @@ Fields|Description
 4. Instances of ActionMessage<br/>
 These are some portable instances of ActionMessage, which are ActionSuccMessage, ActionFailedMessage and ActionErrorMessage. They help you construct your response easier.
 
-#### Maven
+### Maven
 
 ```xml
 <dependency>
@@ -53,7 +53,7 @@ These are some portable instances of ActionMessage, which are ActionSuccMessage,
 </dependency>
 ```
 
-#### Contribution
+### Contribution
 
 1. Fork the repository
 2. Create Feat_xxx branch
