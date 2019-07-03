@@ -60,3 +60,6 @@ These are some portable instances of ActionMessage, which are ActionSuccMessage,
 3. Commit your code
 4. Create Pull Request
 
+### License
+
+MIT License
