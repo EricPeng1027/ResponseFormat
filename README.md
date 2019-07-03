@@ -39,7 +39,7 @@ Fields|Description
 |**msg**|*extra message of response*|
 <br/>
 <br/>  
-4. Instances of ActionMessage    
+4. Instances of ActionMessage      
 These are some portable instances of ActionMessage, which are ActionSuccMessage, ActionFailedMessage and ActionErrorMessage. They help you construct your response easier.
 
 #### Installation
