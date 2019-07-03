@@ -1,0 +1,9 @@
+/home/ericp/Works/myprj/ResponseFormat/src/main/java/web/base/CommonMessage.java
+/home/ericp/Works/myprj/ResponseFormat/src/main/java/util/Strings.java
+/home/ericp/Works/myprj/ResponseFormat/src/main/java/web/extend/ActionSuccMessage.java
+/home/ericp/Works/myprj/ResponseFormat/src/main/java/web/extend/ActionFailedMessage.java
+/home/ericp/Works/myprj/ResponseFormat/src/main/java/web/extend/ActionErrorMessage.java
+/home/ericp/Works/myprj/ResponseFormat/src/main/java/web/base/ActionResult.java
+/home/ericp/Works/myprj/ResponseFormat/src/main/java/web/ReturnCodeType.java
+/home/ericp/Works/myprj/ResponseFormat/src/main/java/web/base/ActionMessage.java
+/home/ericp/Works/myprj/ResponseFormat/src/main/java/config/PropertiesLoader.java

@@ -5,8 +5,13 @@
 
 #### Software Architecture
 Software architecture description
+<<<<<<< HEAD
 This software has 4 parts:
 1. ActionResult<br/>
+=======
+This software has 4 part:
+1. ActionResult  
+>>>>>>> 49b0f3c976100db4346b6640eaf9ce8f63b56777
 This class defines a package of return fields regarding method callings, fields included are: 
  
 Fields|Description
@@ -45,17 +50,15 @@ Fields|Description
 <br/>
 These are some portable instances of ActionMessage, which are ActionSuccMessage, ActionFailedMessage and ActionErrorMessage. They help you construct your response easier.
 
-#### Installation
+#### Maven
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### Instructions
-
-1. xxxx
-2. xxxx
-3. xxxx
+```xml
+<dependency>
+    <groupId>com.github.ericpeng1027</groupId>
+    <artifactId>ResponseFormat</artifactId>
+    <version>0.1</version>
+</dependency>
+```
 
 #### Contribution
 
