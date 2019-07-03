@@ -5,13 +5,9 @@
 
 #### Software Architecture
 Software architecture description
-<<<<<<< HEAD
+
 This software has 4 parts:
 1. ActionResult<br/>
-=======
-This software has 4 part:
-1. ActionResult  
->>>>>>> 49b0f3c976100db4346b6640eaf9ce8f63b56777
 This class defines a package of return fields regarding method callings, fields included are: 
  
 Fields|Description
@@ -26,8 +22,7 @@ Fields|Description
 set the value of each field as you need, usually *code*, *msg* and *data* are the most common fields I would choose to fill out, it's all up to you.
 <br/>
 <br/>  
-2. CommonMessage
-<br/>
+2. CommonMessage<br/>
 This class defines a package of return fields of response content from a request, fields included are:  
 
 Fields|Description
@@ -36,8 +31,7 @@ Fields|Description
 |**desc**|*description of the code*|
 <br/>
 <br/>  
-3. ActionMessage
-<br/>
+3. ActionMessage<br/>
 This class extends CommonMessage and provides extra important content, which are:
 
 Fields|Description
@@ -46,8 +40,7 @@ Fields|Description
 |**msg**|*extra message of response*|
 <br/>
 <br/>  
-4. Instances of ActionMessage
-<br/>
+4. Instances of ActionMessage<br/>
 These are some portable instances of ActionMessage, which are ActionSuccMessage, ActionFailedMessage and ActionErrorMessage. They help you construct your response easier.
 
 #### Maven
