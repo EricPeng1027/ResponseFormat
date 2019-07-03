@@ -5,7 +5,7 @@
 
 #### Software Architecture
 Software architecture description
-This software has two part:
+This software has 4 part:
 1. ActionResult  
 This class defines a package of return fields regarding method callings, fields included are: 
  
